@@ -56,16 +56,23 @@
 
   <!-- Property ids for Portfolio button and text -->
            <a-assets>
-                <a-mixin id="pbutton" geometry="primitive: plane; height: 0.2; width: 1" material="color: #2E2A2E;" rotation="-90 0 0" position="0 0.1 0.6"></a-mixin>
-                <a-mixin id="ptext" rotation="-90 0 0" position="-0.2 0.15 0.6" text="color: white; height: 2.2; width: 2.2; value: Portfolio;"></a-mixin>
+                <a-mixin id="pbutton" geometry="primitive: plane; height: 0.2; width: 1" material="color: #2E2A2E;" rotation="-90 0 0" position="0 0.1 -0.2"></a-mixin>
+           </a-assets>
+
+           <a-assets>
+                <a-mixin id="ptext" rotation="-90 0 0" position="-0.2 0.15 -0.2" text="color: white; height: 2.2; width: 2.2; value: Portfolio;"></a-mixin>
            </a-assets>
 
   <!-- Property ids for Instagram button and text -->
             <a-assets>
                 <a-mixin id="igbutton" geometry="primitive: plane; height: 0.2; width: 1" material="color: #2E2A2E;" rotation="-90 0 0" position="0 0.1 0.9"></a-mixin>
-                <a-mixin id="igtext" rotation="-90 0 0" position="-0.24 0.15 0.88" text="color: white; height: 2.2; width: 2.2; value: Instagram;"></a-mixin>
            </a-assets>
         
+            <a-assets>
+                <a-mixin id="igtext" rotation="-90 0 0" position="-0.24 0.15 0.88" text="color: white; height: 2.2; width: 2.2; value: Instagram;"></a-mixin>
+            </a-assets>
+
+
 <!-- 1. pattern-EvanSaddler.png ///// -->
 <!-- General instructions. Follow same steps for patterns below. -->
 <!-- /////////////////////////////Replace the marker link url ///////////////////////////// -->
@@ -88,24 +95,24 @@
             <a-text mixin="bio" value="BIO: Canadian who grew up in Japan, now loves to create everything from comics, videos, music, games and drawings."></a-text>
             
 <!-- NEW VERSION OF ADDING BUTTONS AND PORTFOLIO - CURRENTLY NOT WORKING - HELP! -->
-            <a-entity mixin="pbutton" navigate-on-click="url: http://ocadu.ca"></a-entity>
+<!--             <a-plane mixin="pbutton" navigate-on-click="url: http://ocadu.ca"></a-plane>
             <a-text mixin="ptext"></a-text>
-            <a-entity mixin="igbutton" navigate-on-click="url: https://www.instagram.com/evan._.art/"></a-entity>
-            <a-text mixin="igtext"></a-entity>
+            <a-plane mixin="igbutton" navigate-on-click="url: https://www.instagram.com/evan._.art/"></a-plane>
+            <a-text mixin="igtext"></a-text> -->
 
 <!-- BELOW THIS IS THE OLD VERSION FOR HOW TO ADD PORTFOLIO / IG BUTTONS -->
 <!-- /////////////////////////////Replace the portfolio link below///////////////////////// -->     
-           <!-- <a-text rotation="-90 0 0" position = '-0.2 0.2 0.6'height="2.2" width="2.2" color="white" value="Portfolio" navigate-on-click="url: http://ocadu.ca"></a-text> -->
+           <a-text rotation="-90 0 0" position = '-0.2 0.2 0.6'height="2.2" width="2.2" color="white" value="Portfolio" navigate-on-click="url: http://ocadu.ca"></a-text>
 
 <!-- /////////////////////////////Replace the instagram link below///////////////////////// -->  
 <!-- /////////////////////////////Remove this asset if there is no instagram link.///////// -->
-<!--             <a-plane height="0.2" width="1" rotation="-90 0 0" color ="#2E2A2E" position ="0 0.1 0.6" navigate-on-click="url: https://www.instagram.com/evan._.art/"></a-plane>
+            <a-plane height="0.2" width="1" rotation="-90 0 0" color ="#2E2A2E" position ="0 0.1 0.6" navigate-on-click="url: https://www.instagram.com/evan._.art/"></a-plane>
             <a-text rotation="-90 0 0" position = '-0.24 0.2 0.88' height="2.2" width="2.2" color="white" value="Instagram" ></a-text>
- -->
+
 <!-- /////////////////////////////Replace the portfolio link below//////////////////////// -->             
-  <!--           <a-plane height="0.2" width="1" rotation="-90 0 0" color ="#2E2A2E" position ="0 0.1 0.9" radius="10"
+            <a-plane height="0.2" width="1" rotation="-90 0 0" color ="#2E2A2E" position ="0 0.1 0.9" radius="10"
             navigate-on-click="url: https://www.instagram.com/evan._.art/"
-            ></a-plane> -->
+            ></a-plane>
         </a-marker>
 
 
@@ -124,17 +131,31 @@
 
             <a-text mixin="bio" value="BIO: Canadian who grew up in Japan, now loves to create everything from comics, videos, music, games and drawings."></a-text>
 
-            <a-entity mixin="pbutton" navigate-on-click="url: http://ocadu.ca"></a-entity>
+<!--             <a-plane mixin="pbutton" navigate-on-click="url: http://ocadu.ca"></a-plane>
             <a-text mixin="ptext"></a-text>
-            <a-entity mixin="igbutton" navigate-on-click="url: https://www.instagram.com/evan._.art/"></a-entity>
-            <a-text mixin="igtext"></a-entity>
+            <a-plane mixin="igbutton" navigate-on-click="url: https://www.instagram.com/evan._.art/"></a-plane>
+            <a-text mixin="igtext"></a-text> -->
+
+                       <!-- /////////////////////////////Replace the portfolio link below///////////////////////// -->     
+           <a-text rotation="-90 0 0" position = '-0.2 0.2 0.6'height="2.2" width="2.2" color="white" value="Portfolio" navigate-on-click="url: http://ocadu.ca"></a-text>
+
+<!-- /////////////////////////////Replace the instagram link below///////////////////////// -->  
+<!-- /////////////////////////////Remove this asset if there is no instagram link.///////// -->
+            <a-plane height="0.2" width="1" rotation="-90 0 0" color ="#2E2A2E" position ="0 0.1 0.6" navigate-on-click="url: https://www.instagram.com/evan._.art/"></a-plane>
+            <a-text rotation="-90 0 0" position = '-0.24 0.2 0.88' height="2.2" width="2.2" color="white" value="Instagram" ></a-text>
+
+<!-- /////////////////////////////Replace the portfolio link below//////////////////////// -->             
+            <a-plane height="0.2" width="1" rotation="-90 0 0" color ="#2E2A2E" position ="0 0.1 0.9" radius="10"
+            navigate-on-click="url: https://www.instagram.com/evan._.art/"
+            ></a-plane>
+
         </a-marker>
 
 
 <!-- 1. pattern-LeeRobley.png -->
           <a-marker type='pattern' preset="custom" url="https://raw.githubusercontent.com/Anran1015/ent/master/PATTfile/pattern-LeeRobley.patt">
             <a-plane mixin="bg"></a-plane>
-            <a-entity mixin="logo"></a-entity>
+            <a-entity mixin="logo" navigate-on-click="url: http://facebook.com"></a-entity>
 
             <a-text mixin="title" value="Invasion Sci-fi Poster"></a-text>
             <a-text mixin="shadow" value="Invasion Sci-fi Poster"></a-text>
@@ -145,13 +166,25 @@
 
             <a-text mixin="bio" value="BIO: Canadian who grew up in Japan, now loves to create everything from comics, videos, music, games and drawings."></a-text>
 
-            <a-entity mixin="pbutton" navigate-on-click="url: http://ocadu.ca"></a-entity>
+       <!--      <a-plane mixin="pbutton" navigate-on-click="url: http://ocadu.ca"></a-plane>
             <a-text mixin="ptext"></a-text>
-            <a-entity mixin="igbutton" navigate-on-click="url: https://www.instagram.com/evan._.art/"></a-entity>
-            <a-text mixin="igtext"></a-entity>
+            <a-plane mixin="igbutton" navigate-on-click="url: https://www.instagram.com/evan._.art/"></a-plane>
+            <a-text mixin="igtext"></a-text>
+ -->
+            <!-- /////////////////////////////Replace the portfolio link below///////////////////////// -->     
+           <a-text rotation="-90 0 0" position = '-0.2 0.2 0.6'height="2.2" width="2.2" color="white" value="Portfolio" navigate-on-click="url: http://ocadu.ca"></a-text>
+
+<!-- /////////////////////////////Replace the instagram link below///////////////////////// -->  
+<!-- /////////////////////////////Remove this asset if there is no instagram link.///////// -->
+            <a-plane height="0.2" width="1" rotation="-90 0 0" color ="#2E2A2E" position ="0 0.1 0.6" navigate-on-click="url: https://www.instagram.com/evan._.art/"></a-plane>
+            <a-text rotation="-90 0 0" position = '-0.24 0.2 0.88' height="2.2" width="2.2" color="white" value="Instagram" navigate-on-click="url: https://www.instagram.com/evan._.art/"></a-text>
+
+<!-- /////////////////////////////Replace the portfolio link below//////////////////////// -->             
+            <a-plane height="0.2" width="1" rotation="-90 0 0" color ="#2E2A2E" position ="0 0.1 0.9" radius="10"
+            navigate-on-click="url: https://www.instagram.com/evan._.art/"></a-plane>
         </a-marker>
 
-        <a-entity camera="" cursor="rayOrigin: mouse" fuse="false">
+        <a-entity camera="" cursor="rayOrigin: mouse" fuse="false"></a-entity>
         </a-scene>
     </body>
 </html>
